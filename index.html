@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Muske</title>
+    <script>
+        // Redirect to mobile.html if screen width is less than 768px
+        if (window.innerWidth < 800) {
+        window.location.href = "mobile.html";
+        }
+    </script>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -201,6 +207,19 @@
         .icon-trash {
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>');
         }
+        
+        /* .desktop-icon { 
+            display:flex;flex-direction:column;align-items:center;width:5rem;text-align:center;font-size:0.75rem;padding:0.5rem;border-radius:0.5rem;cursor:pointer;transition:all 150ms; 
+        }
+        
+        .desktop-icon-image { 
+            width:3rem;height:3rem;margin-bottom:0.25rem;image-rendering:pixelated; 
+        } */
+    
+        .icon-mobile { 
+            background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2" ry="2" stroke="black" stroke-width="1.5" fill="none"/><circle cx="12" cy="18" r="1" fill="black"/></svg>'); background-size:cover;
+        }
+
 
     </style>
 </head>
@@ -245,6 +264,10 @@
         <a href="https://www.linkedin.com/in/ryan-muske/" target="_blank" rel="noopener noreferrer" class="desktop-icon no-underline text-black" id="icon-linkedin">
             <div class="desktop-icon-image icon-mail"></div>
             <span>LinkedIn</span>
+        </a>
+        <a href="mobile.html" class="desktop-icon no-underline text-black">
+            <div class="desktop-icon-image icon-mobile"></div>
+            <span>Mobile Site</span>
         </a>
     </div>
 

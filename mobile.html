@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Muske - Mobile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <h1 class="text-lg font-bold">Ryan Muske</h1>
+    <nav>
+      <ul class="flex space-x-4 text-sm">
+        <li><a href="#resume" class="hover:underline">Resume</a></li>
+        <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="index.html" class="hover:underline">Desktop Site</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Resume -->
+  <section id="resume" class="p-4">
+    <h2 class="text-xl font-semibold mb-2">Resume</h2>
+    <p class="text-sm text-gray-700">Hudson, Wisconsin<br> musketech@gmail.com | (612) 840-6557</p>
+
+    <h3 class="text-lg mt-4 font-medium">Experience</h3>
+    <div class="space-y-4 text-sm">
+      <div>
+        <p class="font-bold">IT Endpoint Engineer, Arctic Wolf</p>
+        <p class="text-xs">May 2024 - Present | Hybrid</p>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Architected and deployed three custom Zero Touch enrollment systems using Jamf Pro and automation tooling, streamlining onboarding across macOS fleets.</li>
+          <li>Developed installable automation scripts triggered by <code>launchd</code> to proactively resolve endpoint issues and reduce ticket volume.</li>
+          <li>Built Swift 6 / SwiftUI applications for advanced automation and device management tasks.</li>
+          <li>Built internal solutions like PUMA, a macOS patch automation tool, reducing manual effort and improving endpoint compliance.</li>
+          <li>Packaged and distributed enterprise applications through Jamf Self Service.</li>
+          <li>Created end-user knowledge base content and internal documentation to empower employees and IT staff.</li>
+          <li>Collaborated in Agile sprints to deliver secure, scalable endpoint automation solutions.</li>
+          <li><strong>Key Tech:</strong> Jamf Pro, Bash, Swift/SwiftUI, launchd, macOS Administration, Endpoint Automation, GitHub Automations.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold">Senior Cloud Systems & Endpoint Administrator, Arctic Wolf</p>
+        <p class="text-xs">May 2019 - May 2024</p>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Maintained and automated endpoint management systems across macOS environments.</li>
+          <li>Streamlined application packaging and deployment pipelines for large enterprise user base.</li>
+          <li>Automated patch management workflows to reduce vulnerabilities and improve compliance.</li>
+          <li>Supported endpoint lifecycle management, including hardware, imaging, and cloud integration.</li>
+          <li><strong>Key Tech:</strong> Endpoint Security, Application Packaging, macOS Administration, IT Automation.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold">Service Management Admin, Compucom (Contract)</p>
+        <p class="text-xs">Nov 2018 - May 2019</p>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Delivered Tier 3 support for enterprise Windows 10 clients via phone, email, and remote tools.</li>
+          <li>Troubleshot complex system issues and documented technical solutions in knowledge base articles.</li>
+          <li>Escalated unresolved incidents with detailed technical notes to maximize resolution speed.</li>
+          <li><strong>Key Tech:</strong> Windows 10 Support, Remote Troubleshooting, ITSM Systems, Customer Support.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="text-lg mt-6 font-medium">Skills</h3>
+    <ul class="list-disc ml-6 text-sm space-y-1">
+      <li><strong>Endpoint Management:</strong> Jamf Pro, Zero Touch Enrollment, macOS Administration</li>
+      <li><strong>Automation & Scripting:</strong> Bash, Swift 6, SwiftUI, launchd, Python (basic automation)</li>
+      <li><strong>Application & Patch Management:</strong> Packaging, Deployment Pipelines, Self-Service App Stores</li>
+      <li><strong>Systems & Tools:</strong> Agile/Scrum, ITSM Platforms, Knowledge Base Management</li>
+      <li><strong>Core Competencies:</strong> IT Automation, Endpoint Security, Documentation, Cross-Team Collaboration</li>
+    </ul>
+
+    <div class="flex justify-center mt-4">
+      <img src="https://ghchart.rshah.org/rmuske" alt="Ryan's GitHub chart" class="w-full max-w-lg" />
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="p-4 bg-white mt-4 rounded shadow">
+    <h2 class="text-xl font-semibold mb-2">Portfolio</h2>
+    <div class="grid grid-cols-2 gap-4 text-center">
+      <a href="https://github.com/rtkwlf-it/PUMA-public" target="_blank" class="p-2 border rounded hover:bg-gray-50">PUMA</a>
+      <a href="https://www.youtube.com/watch?v=2UXR1sC0jOQ" target="_blank" class="p-2 border rounded hover:bg-gray-50">JNUC 2024</a>
+      <a href="https://github.com/rmuske/Helpful-macOS-Things" target="_blank" class="p-2 border rounded hover:bg-gray-50">Helpful Scripts</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-4 mt-4">
+    <h2 class="text-xl font-semibold mb-2">About Me</h2>
+    <img src="assets/JNUC2024.png" alt="Ryan Muske" class="w-full rounded mb-2" />
+    <p class="text-sm text-gray-700">I'm Ryan Muske, an Apple-focused IT endpoint engineer specializing in automation and zero-touch deployment. I work with Jamf Pro, Swift, SwiftUI, and Bash to design custom tools and onboarding systems that make managing Apple devices simple and scalable.</p>
+    <p class="text-sm text-gray-700 mt-2">I built PUMA, an open-source Patch Update Manager for Apple, to streamline patching and reduce complexity for IT teams. My focus is creating solutions that are powerful, reliable, and seamless, technology that feels effortless because it just works.</p>
+    <p class="text-sm text-gray-700 mt-2">Outside of engineering, I enjoy building custom PCs in my workshop, and spending time with my pets Beans, Rocky, and Tulip. Life is made even brighter by my fiancée Shannon, whose love and support fuel both my work and my personal projects.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-3 mt-6 text-xs">
+    &copy; 2025 Ryan Muske — <a href="https://www.linkedin.com/in/ryan-muske/" class="underline">LinkedIn</a>
+  </footer>
+</body>
+</html>
